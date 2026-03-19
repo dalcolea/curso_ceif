@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    padding: 10px;
+    border: 1px solid grey;
+}
+h2 {
+    color: blue;
+    font-size: 1.2em;
+}
+section p {
+    color: #40e0d0; /*azul tiffany*/
+    font-size: 0.9em;
+}
+.rojo {
+    color: red;
+}
+#logo {
+    margin: 20px;
+}

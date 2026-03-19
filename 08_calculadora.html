@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
+
+        * { box-sizing: border-box;}
+
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin:0;
+        }
+        table {
+            border-collapse: collapse;
+            /* margin: 20px auto; */
+        }
+        td {
+            /* border: 1px solid #ccc; */
+            padding: 5px;
+            text-align: center;
+        }
+        input {
+            font-family: "Bitcount Grid Double Ink", system-ui;
+            font-weight: 250;
+            width: 100%;
+            font-size: 1.3em;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        button {
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            font-size: 1.3em;
+        }
+        .numero {
+            background-color: #7e3838;
+            color: #f9f2f2
+        }
+        .num0{
+            width: 100%;
+            border-radius: 200px;
+            text-align: left;
+            padding-left: 25px;
+        }
+        .borrar {
+            background-color: rgb(238, 38, 38);
+            color: rgb(239, 239, 160);
+        }
+        .resultado {
+            background-color: rgb(52, 52, 237);
+            color: greenyellow;
+        }
+        .oper {
+            background-color: rgb(243, 162, 13);
+            color: rgb(30, 2, 2);
+        }
+
+        ::-webkit-input-placeholder {
+            color: #f9f2f2; /* Cambia el color del placeholder a blanco */ 
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="display" disabled value="123.456.789.0"></td>
+        </tr>
+        <tr>
+            <td><button class="borrar">C</button></td>
+            <td><button class="oper">+/-</button></td>
+            <td><button class="oper">%</button></td>
+            <td><button class="oper">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="numero">7</button></td>
+            <td><button class="numero">8</button></td>
+            <td><button class="numero">9</button></td>
+            <td><button class="oper">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="numero">4</button></td>
+            <td><button class="numero">5</button></td>
+            <td><button class="numero">6</button></td>
+            <td><button class="oper">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="numero">1</button></td>
+            <td><button class="numero">2</button></td>
+            <td><button class="numero">3</button></td>
+            <td><button class="oper">-</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="numero num0">0</button></td>
+            <td><button class="numero">.</button></td>
+            <td><button class="resultado">=</button></td>
+        </tr>
+        <tr>
+            <td><button class="oper">x<sup>2</sup></button></td>
+            <td><button class="oper">x<sup>3</sup></button></td>
+            <td><button class="oper">&pi;</button></td>
+            <td><button class="oper">&radic;</button></td>
+        </tr>
+    </table>
+</body>
+</html>

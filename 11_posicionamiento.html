@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: lightblue;
+            height: 20vh;
+        }
+        main {
+            background-color: lightgoldenrodyellow;
+            /* height: 70vh; */
+        }
+        aside {
+            background-color: lightgreen;
+            width: 20vw;
+            height: 100%;
+            float: left;
+        }
+        section {
+            background-color: rgb(231, 238, 231);
+            /* width: 100vw; */
+            height: 70vh;
+        }
+        footer {
+            background-color: lightseagreen;
+            height: 10vh;
+        }
+        .caja {
+            background-color: rgb(16, 1, 1);
+            width: 100px;
+            height: 100px;
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>header</h2>
+    </header>
+    <main>
+        <!-- <aside>
+            <h2>aside</h2>
+        </aside> -->
+        <section>
+            <h2>section</h2>
+        </section>
+        <div class="caja"></div>
+    </main>    
+    <footer>
+        <h2>footer</h2>
+    </footer>
+</body>
+</html>

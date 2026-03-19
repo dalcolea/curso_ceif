@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rojo: #E63946;
+    --amarillo: #F1C40F;
+    --azul: #1D4ED8;
+    --negro: #000000;
+    --blanco: #F8F9FA;
+    --gris: #bdbfc1;
+    --borde: 8px solid black;
+    --bordemedio: 4px solid black;
+}
+
+main {
+    width:500px;
+    height: 600px;
+    margin:50px auto;
+    background-color: black;
+}
+
+#superior {
+    height: 65%;
+    display: flex;
+}
+
+#inferior {
+    height: 35%;
+    border-left: var(--borde);
+    border-right: var(--borde);
+    border-bottom: var(--borde);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#supizq {
+    width: 60%;
+    height: 100%;
+    border: var(--borde);
+    background-color: var(--rojo);
+}
+#supdch {
+    width: 40%;
+    height: 100%;
+    border-top: var(--borde);
+    border-right: var(--borde);
+    border-bottom: var(--borde);
+}
+
+#supdchsup {
+    height: 50%;
+    border-bottom: var(--borde);
+    background-color: var(--amarillo);
+}
+
+#supdchinf {
+    display: flex;
+    height: 50%;
+}
+
+#supdchinf div {
+    width: 50%;
+    background-color: var(--blanco);
+}
+
+#supdchinfizq {
+    border-right: var(--bordemedio);
+}
+
+#supdchinfdch {
+    border-left: var(--bordemedio);
+}
+
+#inferior div {
+    height: 50%;
+}
+
+#inferior div:nth-child(1) {
+    width: 29.7%;
+    background-color: var(--negro);
+    border-right: var(--bordemedio);
+    border-bottom: var(--borde);
+}
+
+#inferior div:nth-child(2) {
+    width: 29.7%;
+    background-color: var(--gris);
+    border-left: var(--bordemedio);
+    border-bottom: var(--borde);
+    border-right: var(--bordemedio);
+}
+#inferior div:nth-child(3) {
+    width: 40.5%;
+    background-color: var(--blanco);
+    border-left: var(--bordemedio);
+    border-bottom: var(--borde);
+}
+#inferior div:nth-child(4) {
+    width: 29.7%;
+    background-color: var(--negro);
+    border-right: var(--bordemedio);
+    border-bottom: var(--borde);
+}
+#inferior div:nth-child(5) {
+    width: 29.7%;
+    background-color: var(--gris);
+    border-left: var(--bordemedio);
+    border-bottom: var(--borde);
+    border-right: var(--bordemedio);
+}
+#inferior div:nth-child(6) {
+    width: 40.5%;
+    background-color: var(--azul);
+    border-left: var(--bordemedio);
+}
