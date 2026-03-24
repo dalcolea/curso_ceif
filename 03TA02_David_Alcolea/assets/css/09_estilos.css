@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: #F3F5F6;
+    --primary-font-size:14px;
+    --secondary-font-size:16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--primary-font-size);
+    margin:0px;
+    padding:0px;
+}
+
+h1 {
+    font-size: 5.8em;
+    font-family: "Google Sans Flex", sans-serif;
+    font-weight: 550 ;
+    margin:0;
+}
+
+h1 span:nth-child(1) {
+    color: #4285F4;
+}
+h1 span:nth-child(2) {
+    color: #EA4335;
+}   
+h1 span:nth-child(3) {
+    color: #FBBC05;
+}
+h1 span:nth-child(4) {
+    color: #4285F4;
+}
+h1 span:nth-child(5) {
+    color: #34A853;
+}
+h1 span:nth-child(6) {
+    color: #EA4335;
+    display: inline-block;
+    transform: rotate(-15deg);
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+}
+#app {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app img {
+    width: 20px;
+    height: 20px;
+}
+
+#app:hover {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#gmail {
+    border:2px solid blue;
+    width: 40px; height: 40px;
+    padding: 2px;
+    border-radius: 50%;
+}
+#gmail img {
+    width: 100%;height: 100%;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    margin: 30px auto
+}
+
+section.logo {
+    margin-top:80px;
+}
+
+form {
+    border: 1px solid lightgray;
+    width: 50%;
+    margin:auto;
+    padding:8px 0px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 1px grey;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+}
+
+form input {
+    border: none;
+    width: 60%;
+    font-size: var(--secondary-font-size);
+    outline: none;
+}
+
+form img {
+    height: 25px;
+    cursor: pointer;
+}
+
+form button {
+    background: var(--secondary-color);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: var(--primary-font-size);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form button:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.botonesbusqueda button{
+    margin: 20px 0;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.botonesbusqueda button:hover {
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    background-color: #F2F2F2;
+}
+.azul a {
+    color: blue;
+    margin:0;
+}
+
+#hojita {
+    height: 14px;
+}
