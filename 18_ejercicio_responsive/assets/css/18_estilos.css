@@ -36,18 +36,32 @@ nav img {
 
 nav ul {
     list-style: none;
-    height: 28px;
-    transition: 1s;
+    height: 0px;
+    transition: animation 1s;
+    overflow: hidden;
 }
 
-nav ul:hover {
-    height: auto;
+nav img:hover + ul {
+    animation: expand 1s forwards;
+    /* height: auto; */
+}
+
+@keyframes expand {
+    from {
+        height: 0px;
+    }
+    to {
+        height: auto;
+    }
 }
 
 nav a {
     color: #fff;
-    display: block;
+    /* display: block; */
     text-decoration: none;
+}
+
+nav li {
     padding: 10px 20px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
@@ -143,11 +157,14 @@ footer {
         justify-content: center;
     }
 
-    nav a:hover {
+    nav li:hover {
         background-color: #555;
     }
 }
 
 @media (min-width: 1400px) {
-    
+    header, nav, .layout, footer {
+        max-width: 1600px;
+        margin: 10px auto;
+    }
 }
